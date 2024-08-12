@@ -2,9 +2,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Project Preview
 
-[!Project Preview 1](public/project-preview-1.png)
-[!Project Preview 2](public/project-preview-2.png)
-[!Project Preview 3](public/project-preview-3.png)
+![Project Preview 1](public/project-preview-1.png)
+![Project Preview 2](public/project-preview-2.png)
+![Project Preview 3](public/project-preview-3.png)
 
 ## Overview
 
