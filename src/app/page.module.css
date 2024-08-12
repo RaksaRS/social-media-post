@@ -1,0 +1,66 @@
+.loginBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  grid-column: 1 / 5;
+}
+
+.loginBtnContainer > a {
+  padding: 0.8em 1em;
+  background-color: blue;
+  border-radius: 1em;
+  color: white;
+}
+
+.sideNav ul {
+  list-style: none;
+}
+
+.sideNav li {
+  height: 3rem;
+  display: block;
+}
+
+.sideNav a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.sideNav li:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.postStatus {
+  margin-top: 5em;
+  display: grid;
+  grid-template: 8rem 2rem / 2.5rem auto;
+  gap: 0.5rem 1rem;
+}
+
+.postStatus textarea {
+  border: 1px solid var(--gray-300);
+  border-radius: var(--small-border-radius);
+  padding: 0.5rem 1rem;
+}
+
+.postStatus textarea {
+  border: 1px solid var(--gray-300);
+}
+
+.postStatusBtns {
+  display: flex;
+  grid-column: 2 / 3;
+  justify-content: flex-end;
+}
+
+.postStatusBtns button,
+.postStatusBtns input[type="submit"] {
+  margin: 0 0 0 1rem;
+  padding: 0 1.5rem;
+  color: white;
+  border: none;
+  background: var(--blue-200);
+  border-radius: var(--small-border-radius);
+}

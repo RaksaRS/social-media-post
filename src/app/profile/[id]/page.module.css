@@ -1,0 +1,13 @@
+.bgLight {
+  background-color: lightgray;
+  color: green;
+}
+
+.padding1 {
+  padding: 1rem;
+}
+
+.redText {
+  composes: padding1 bgLight;
+  color: red;
+}

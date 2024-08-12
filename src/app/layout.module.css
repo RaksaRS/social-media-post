@@ -1,0 +1,79 @@
+.root {
+  height: 100%;
+  padding: 0 10%;
+  display: grid;
+  margin-top: 3rem;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.body {
+  margin-bottom: 2rem;
+}
+
+.topNav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 3rem;
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  border-bottom: 1px solid var(--gray-200);
+  background-color: var(--top-nav-bg);
+}
+
+.topNavLeft {
+  display: grid;
+  grid-template-columns: 2.5rem auto;
+  gap: 1rem;
+  padding: 0 0 0 1rem;
+}
+
+.topNavLeft input {
+  --height: 1.75rem;
+  margin: 0.5rem 0 0 0;
+  height: var(--height);
+  border: 1px solid var(--gray-200);
+  border-radius: calc(var(--height) / 2);
+}
+
+.topNavCenter {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.topNavCenter a {
+  flex: 0 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.topNavCenter a:hover {
+  background-color: var(--link-hover-bg);
+}
+
+.topNav a:visited,
+.topNav a:focus {
+  text-decoration: none;
+}
+
+.topNavRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1rem 0 0;
+}
+
+.topNavRight a {
+  flex: 0 0 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topNavRight a:hover {
+  background-color: rgb(240, 240, 240);
+}

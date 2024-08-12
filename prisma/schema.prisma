@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model post {
+  id          Int      @id @default(autoincrement())
+  userid      String   @db.VarChar(30)
+  postcontent String   @db.Text
+  postdate    DateTime @db.Date
+  likes       Int
+  user        user     @relation(fields: [userid], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "post_ibfk_1")
+
+  @@index([userid], map: "userid")
+}
+
+model user {
+  id         String   @id @db.VarChar(30)
+  firstname  String   @db.Text
+  lastname   String   @db.Text
+  email      String   @db.Text
+  gender     String   @db.Text
+  joineddate DateTime @db.Date
+  post       post[]
+}
